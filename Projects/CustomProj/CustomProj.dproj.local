@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.286,D:\GitHub\Main\Implementation\Interfaces\CustomEntryDecorator.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.398,=D:\GitHub\Main\Implementation\Interfaces\CustomEntryDecorator.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.311,D:\GitHub\Main\Implementation\Interfaces\CustomInterfaces.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.645,=D:\GitHub\Main\Implementation\Lib\Forms\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.720,D:\GitHub\Main\Implementation\Interfaces\CustomEntryDecorator.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.379,=D:\GitHub\Main\Implementation\Interfaces\CustomEntryDecorator.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.084,=D:\GitHub\Main\Implementation\Interfaces\CustomInterfaces.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.632,D:\GitHub\Main\Projects\CustomProj\CustomProj.dproj=C:\Users\GTR-1\Documents\Embarcadero\Studio\Projects\Project4.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.649,=C:\Users\GTR-1\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.333,D:\GitHub\Main\Implementation\Interfaces\CustomInterfaces.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.040,=D:\GitHub\Main\Implementation\Interfaces\CustomInterfaces.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.935,=D:\GitHub\Main\Implementation\Interfaces\CustomInterfaces.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\..\Main"/>
+    <File Path="..\..\Implementation"/>
+    <File Path="..\..\Implementation\Interfaces"/>
+    <File Path="..\..\Implementation\Interfaces\CustomInterfaces.pas"/>
+    <File Path="..\..\Implementation\Lib"/>
+    <File Path="..\..\Implementation\Lib\Forms"/>
+    <File Path="..\..\Implementation\Lib\Forms\Main.pas"/>
+    <File Path="..\..\Implementation\Lib\Forms\Main.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
