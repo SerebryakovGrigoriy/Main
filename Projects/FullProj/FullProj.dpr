@@ -1,6 +1,7 @@
 program FullProj;
 
 uses
+  SysUtils,
   Spring.Container,
   Spring.Persistence.Core.Interfaces,
   Vcl.Forms,
@@ -12,7 +13,6 @@ uses
 
 var
 container: TContainer;
-
 begin
   container := GlobalContainer;
 
@@ -21,24 +21,31 @@ begin
   function: TFormTree
   begin
       // создаем объект типа TFormTree
-      result := TFormTree.Create(nil);
+      Result := TFormTree.Create(nil);
   end);
 
   // регистрация типа TMainForm и его реализации
-  container.RegisterType<TMainForm, TMainForm>.DelegateTo(
+  container.RegisterType<IMainFormInterface, TMainForm>.DelegateTo(
   function: TMainForm
   begin
       // создаем объект типа TMainForm
       Application.CreateForm(TMainForm, Result);
   end);
+
   container.Build;
 
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  MainForm:=GlobalContainer.Resolve<TMainForm>;
-  Application.Run;
+  try
+    GlobalContainer.Resolve<IMainFormInterface>;
+    Application.Initialize;
+    Application.MainFormOnTaskbar := True;
+    Application.Run;
 
-  // контроль утечки памяти
-  ReportMemoryLeaksOnShutdown := True;
+    // контроль утечки памяти
+    ReportMemoryLeaksOnShutdown := True;
+  except
+    raise Exception.Create('Instance of type TMainForm not found !');
+  end;
+
+
 
 end.
